@@ -59,17 +59,21 @@ def print_board_with_emojis(board_size, player_positions, snakes, ladders):
     the snake at position 16, and the ladder at position 4.
     """
     
+    # FUNCTION 1
     # Initialize the display board with empty squares
     display_board = ['⬜' for _ in range(board_size)]
     
+    # FUNCTION 2
     # Place snakes on the board
     for snake_start in snakes:
         display_board[snake_start - 1] = '🐍'
     
+    # FUNCTION 3
     # Place ladders on the board
     for ladder_start in ladders:
         display_board[ladder_start - 1] = '🪜'
     
+    # FUNCTION 4
     # Place players on the board
     for i, pos in enumerate(player_positions):
         if pos <= board_size:
@@ -82,7 +86,7 @@ def print_board_with_emojis(board_size, player_positions, snakes, ladders):
 
     print("-" * 80)  # Print horizontal line between rows
 
-    
+    # FUNCTION 5
     # Print the board row by row, alternating row directions
     for i in range(9, -1, -1):  # Loop through rows 9 to 0
         start = i * 10

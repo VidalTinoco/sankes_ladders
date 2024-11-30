@@ -75,6 +75,9 @@ from snake_ladder.utilities.ascii_art import display_ascii_art
         
 #         current_player = 1 - current_player
 
+# def create_players():
+#     return [1, 1]
+
 
 def play_turn(player_positions, current_player, snakes, ladders):
     """
